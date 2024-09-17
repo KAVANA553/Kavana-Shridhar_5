@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Login</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Public Grievance Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="admin_login.html">Admin Login</a></li>
+                <li><a href="#" id="registerLink">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-content">
+        <h2>User Login</h2>
+        <form id="loginForm" action="validate_login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+    
+            <button type="submit">Login</button>
+        </form>
+        
+        <form id="registerForm" action="register_user.php" method="POST" class="hidden">
+            <label for="regUsername">Username:</label>
+            <input type="text" id="regUsername" name="regUsername" required><br><br>
+    
+            <label for="regPassword">Password:</label>
+            <input type="password" id="regPassword" name="regPassword" required><br><br>
+    
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Public Grievance Portal</p>
+    </footer>
+
+    <script>
+        document.getElementById('registerLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('loginForm').classList.add('hidden');
+            document.getElementById('registerForm').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>

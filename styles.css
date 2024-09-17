@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://wallpapers.com/images/hd/work-focused-keyboard-uyk7runllskmetcx.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 50px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the body takes the full viewport height */
+    flex-direction: column; /* Stack content vertically */
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: absolute; /* Fix header at the top */
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* User Login and Admin Login Containers */
+.login-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    width: 100px; /* Set width to 200px */
+    height: 200px; /* Set height to 200px */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text inside the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* User Login and Admin Login Specific Classes */
+.user-login, .admin-login {
+    margin: 0; /* Remove margin to center perfectly */
+}
+
+/* Main Content Container */
+.main-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
